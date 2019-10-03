@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: ${JDBC_DATABASE_URL:jdbc:postgresql://localhost/db_chart}
+    username: ${JDBC_DATABASE_USERNAME:develop}
+    password: ${JDBC_DATABASE_PASSWORD:123456}
+  jpa:
+    properties.hibernate.jdbc.lob.non_contextual_creation: true
+    hibernate.ddl-auto: update
+    generate-ddl: false
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+hibernate.connection.autocommit.value: false
