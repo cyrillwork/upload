@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl http://localhost:8080/files
+#curl http://localhost:8080/files
 
 echo ""
 echo "upload file="$1
